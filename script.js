@@ -57,13 +57,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Reset all links
       links.forEach((l) => {
-        l.classList.remove("text-black");
-        l.classList.add("text-gray-300");
+        l.classList.remove("text-[#153965]");
+        l.classList.add("text-[#829EBF]");
       });
 
       // Set active class
-      this.classList.remove("text-gray-300");
-      this.classList.add("text-black");
+      this.classList.remove("text-[#829EBF]");
+      this.classList.add("text-[#153965]");
 
        // Scroll to section smoothly
        const target = document.querySelector(this.getAttribute("href"));
