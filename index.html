@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USV</title>
+    <link rel="stylesheet" href="globel.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="md:px-[32px] md:py-[10px] p-[16px] font-Manrope scroll-smooth">
+
+    <!-- NAVBAR -->
+    <div class="flex justify-between items-center text-[#153965] p-3 lg:justify-evenly lg:items-center sticky top-0 bg-white z-50">
+        <!-- Logo - Always Left -->
+        <div class="flex-shrink-0">
+            <img src="img/image 16.png" alt="Logo" class="w-[48px] lg:w-auto">
+        </div>
+
+        <!-- Mobile Icons -->
+        <div class="flex items-center gap-4 lg:hidden">
+            <!-- Search Icon -->
+            <button>
+                <img src="img/icons8-search-50.png" alt="" class="w-[30px]">
+            </button>
+
+            <!-- Hamburger Menu Icon -->
+            <button id="mobile-menu-toggle">
+                <img src="img/icons8-hamburger-menu-30.png" alt="" class="w-[30px]">
+            </button>
+
+        </div>
+
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu"
+            class="hidden absolute top-16 z-50 left-0 justify-items-center w-full bg-white p-4 transition-all duration-300 transform lg:hidden">
+            <ul class="flex flex-col gap-4">
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Who we are</a></li>
+                <li><a href="#">Our Expertise</a></li>
+                <li><a href="#">Capabilities</a></li>
+                <li><a href="#">Life at USV</a></li>
+                <li><a href="#">Our Responsibility</a></li>
+                <li><a href="#">Highlights</a></li>
+                <li><a href="#">Reach us</a></li>
+                <li><a href="#">Global</a></li>
+            </ul>
+        </div>
+
+        <!-- Desktop Navigation (Hidden on Mobile) -->
+        <div class="hidden lg:flex flex-wrap justify-between items-center gap-7 text-[15px]">
+            <ul class="flex gap-7">
+                <li class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-[#ACE1F8] rounded-xs"></div>
+                    <a href="">Business</a>
+                </li>
+                <li class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-[#ACE1F8] rounded-xs"></div>
+                    <a href="">Who we are</a>
+                </li>
+                <li class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-[#ACE1F8] rounded-xs"></div>
+                    <a href="">Our Expertise</a>
+                </li>
+                <li class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-[#ACE1F8] rounded-xs"></div>
+                    <a href="">Capabilities</a>
+                </li>
+                <li class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-[#ACE1F8] rounded-xs"></div>
+                    <a href="">Life at USV</a>
+                </li>
+                <li class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-[#ACE1F8] rounded-xs"></div>
+                    <a href="">Our Responsibility</a>
+                </li>
+            </ul>
+            <ul class="flex gap-5 pl-10 md:hidden lg:block lg:flex lg:flex-wrap">
+                <li class=""><a href="">Highlights</a></li>
+                <li><a href="">Reach us</a></li>
+                <!-- <li class="flex flex-wrap"><a href="">Global</a><img src="img/icons8-expand-arrow-24.png" alt="" class=""></li> -->
+                <li><a href="" class="flex flex-wrap">Global<img src="img/icons8-expand-arrow-24.png" alt=""
+                            class=""></a></li>
+
+            </ul>
+            <div class="pl-3">
+                <img src="img/icons8-search-50.png" alt="" class="w-6">
+            </div>
+        </div>
+    </div>
+
+    <!-- main image section -->
+    <div class="pt-3 pb-2 text-white relative  w-full h-auto lg:w-full xl:h-[359px] rounded-2xl">
+        <img src="img/Change this image.jpg" alt="" class="hidden md:block rounded-2xl object-cover w-full h-auto">
+        <img src="img/mob-mainimg.jpg" alt="" class="md:hidden rounded-2xl w-full"> <!-- For mobile view only -->
+
+        <div class="absolute bottom-7 md:bottom-11 left-7 w-[80%] md:w-[50%] lg:w-[40%] xl:w-[40%] xl:bottom-15">
+            <span class="text-[12px] xl:text-[20px] font-semibold block mb-2">OUR STORY</span>
+            <p class="text-[32px] lg:text-[44px] font-semibold leading-tight">Paving the Path to Reliable Healthcare</p>
+        </div>
+    </div>
+
+    <!-- list line -->
+    <div class="p-3 pb-8 overflow-x-auto md:overflow-visible sticky top-15 bg-white z-40">
+        <ul class="flex whitespace-nowrap md:whitespace-normal items-center gap-7">
+            <a href="#OUR_VISION_MISSION" class="hover:text-black text-black nav-link active">Our Mission & Vision</a>
+            <a href="#LEADERSHIP_QUOTE" class="hover:text-black text-gray-300 nav-link">Leadership Quote</a>
+            <a href="#Hitting_New_Milestones" class="hover:text-black text-gray-300 nav-link">Hitting New Milestones</a>
+            <a href="#Driven_by_people" class="hover:text-black text-gray-300 nav-link">Driven By People</a>
+        </ul>
+    </div>
+
+    <hr class="text-green-600">
+
+    <!-- OUR VISION MISSION -->
+    <div id="OUR_VISION_MISSION" class="pt-4 pb-10">
+        <!-- Heading -->
+        <div class="text-green-600 text-[14px] font-semibold mb-4 flex items-center">
+            <div class="w-4 h-4 bg-green-600 rounded-xs"></div>
+            <span class="ml-2">OUR MISSION & VISION</span>
+        </div>
+
+        <div class="flex flex-col-reverse md:flex-row gap-6">
+
+            <!-- Left Side: Accordion -->
+            <div class="w-full md:w-[793px]">
+
+                <!-- Mission -->
+                <div id="missionContainer" onclick="toggleAccordion('mission')"
+                    class="bg-green-100 p-4 rounded-lg mb-4 cursor-pointer transition-all duration-300 ease-in-out md:h-[425px]">
+                    <div class="text-[20px] md:text-[24px] font-bold mb-2">Driven by Mission</div>
+                    <div id="missionText"
+                        class="text-[15px] md:text-[18px] text-gray-700 transition-all duration-300 overflow-auto">
+                        At USV, our mission is clear. We aim to be a reliable provider of healthcare products and
+                        services, not just within India, but the world over. We strive to deliver superior value to
+                        our consumers and stakeholders through specialised and focused product innovation. Our work
+                        environment is designed to value people, foster learning, nurture creativity, and drive
+                        collective excellence.
+                    </div>
+                </div>
+
+                <!-- Vision -->
+                <div id="visionContainer" onclick="toggleAccordion('vision')"
+                    class="bg-green-200 p-4 rounded-lg cursor-pointer transition-all duration-300 ease-in-out md:h-[70px]">
+                    <div class="text-[20px] md:text-[24px] font-bold mb-2">Led by Vision</div>
+                    <div id="visionText"
+                        class="hidden text-[15px] md:text-[18px] text-gray-700 transition-all duration-300 overflow-auto">
+                        We see a future where we’ve achieved leadership in all our business units, earning the
+                        respect of patients, physicians, and stakeholders alike. This will be made possible through
+                        an upward trajectory of sales and profitable growth. Allowing us to, in turn, build upon our
+                        legacy as reliable healthcare partners.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Image -->
+            <div class="w-full md:w-[559px] h-[184px] md:h-[520px]">
+                <img src="img/Vision Mission Image.jpg" alt="Vision and Mission"
+                    class="hidden md:block w-full h-full object-cover rounded-lg shadow-md" />
+                <img src="img/mob-OUR MISSION VISION.jpg" alt="Leadership Quote"
+                    class="block md:hidden w-full h-full object-cover rounded-lg shadow-md" />
+            </div>
+        </div>
+    </div>
+
+    <hr class="text-green-600">
+
+    <!-- LEADERSHIP QUOTE -->
+    <div id="LEADERSHIP_QUOTE" class="pt-4 pb-10">
+        <div class="text-green-600 text-[14px] font-semibold mb-4 flex flex-wrap justify-start items-center">
+            <div class="w-4 h-4 bg-green-600 rounded-xs"></div>
+            <span class="ml-2">LEADERSHIP QUOTE</span>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-6">
+            <!-- Section (Right) -->
+            <div class="w-full lg:w-[634px] h-[330px] lg:h-[520px]">
+                <!-- Desktop Image -->
+                <img src="img/Mr. Prashant Tewari.jpg" alt="Vision and Mission"
+                    class="hidden lg:block w-full h-full object-cover rounded-lg shadow-md" />
+
+                <!-- Mobile Image -->
+                <img src="img/mob-LEADERSHIP QUOTE.jpg" alt="Leadership Quote"
+                    class="block lg:hidden object-top object-cover w-full h-full rounded-lg shadow-md" />
+            </div>
+
+            <!-- Section (Left) -->
+            <div class="w-full lg:w-[793px] p-4">
+                <div class=" mb-4">
+                    <div class=" text-[24px] md:text-[36px] font-semibold text-[#153965] mb-2 pb-4">“At USV, leadership
+                        means
+                        crafting a legacy of innovation, trust, and care.”</div>
+                    <p class="text-[15px] md:text-[16px] text-gray-700">
+                        We are committed to advancing health and well-being, not just as a business,
+                        but as a purpose-driven partner to communities worldwide. Together, we lead with integrity,
+                        driven by our passion for excellence and a vision to create a healthier, sustainable future
+                        for all”
+                    </p>
+                </div>
+                <div class="pt-5 lg:pb-30 pb-8">
+                    <div class="text-[16px] md:text-[20px] text-[#153965]">Mr. Prashant Tewari</div>
+                    <span class="text-[14px] text-gray-700">Managing Director</span>
+                </div>
+                <a href=""
+                    class="bg-[#F2FBFF] text-[#0D74D3] font-semibold p-4 md:p-7 rounded-lg flex items-center gap-2">
+                    <span class="text-[14px]">OUR LEADERSHIP</span>
+                    <img src="img/icons8-arrow-50-right-blue.png" alt="" class="w-[20px] pt-1">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="text-[#009FE2]">
+
+    <!-- Hitting New Milestones -->
+    <div id="Hitting_New_Milestones" class="pt-4 pb-10">
+        <div>
+            <div class="text-[#009FE2] text-[14px] font-semibold mb-4 flex flex-wrap justify-start items-center">
+                <div class="w-4 h-4 bg-[#009FE2] rounded-xs"></div>
+                <span class="ml-2"> HITTING NEW MILESTONES</span>
+            </div>
+
+            <div class="flex flex-wrap justify-between">
+                <div>
+                    <button class="tab-btn inline-block bg-[#153965] p-2 text-white text-xl rounded-md pr-3 pl-3"
+                        data-target="2020">2020</button>
+                    <button
+                        class="tab-btn inline-block bg-white border-[#153965] border-solid border-2 p-1.5 text-xl rounded-md pr-3 pl-3"
+                        data-target="2010">2010</button>
+                </div>
+                <a href="" class="hidden md:block md:flex items-center gap-2 ">
+                    <span class="text-[#009FE2]">OUR HERITAGE</span>
+                    <img src="img/icons8-arrow-50-right-blue.png" alt="" class="w-[20px]">
+                </a>
+            </div>
+
+        </div>
+        <div id="tab-content-container" class="overflow-x-auto scrollbar-hide">
+            <div id="2020" class="tab-content flex  gap-2 w-max   px-2 ">
+                <!-- img 2024 -->
+                <div class="shrink-0">
+                    <div class="relative text-white">
+                        <img src="img/2024.jpg" alt="" class="w-[290px] h-[422px] pt-5" />
+                        <div class="absolute top-3/5 left-3 p-2">
+                            <span class="text-[24px] md:text-[32px] font-semibold">2024</span>
+                            <p class="text-[15px] md:text-[16px]">We expand our manufacturing footprint with a new unit
+                                in Baddi, Himachal
+                                Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- img 2023 -->
+                <div class="shrink-0">
+                    <div class="relative text-white">
+                        <img src="img/2023.jpg" alt="" class="w-[290px] h-[422px] pt-5" />
+                        <div class="absolute top-3/5 left-3 p-2">
+                            <span class="text-[24px] md:text-[32px] font-semibold">2023</span>
+                            <p class="text-[15px] md:text-[16px]">We enter the insulin market and become the first
+                                company to launch
+                                Insulin Aspart biosimilars in India.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- img 2022 -->
+                <div class="shrink-0">
+                    <div class="relative text-white">
+                        <img src="img/2022.jpg" alt="" class="w-[290px] h-[422px] pt-5" />
+                        <div class="absolute top-3/5 left-3 0-2">
+                            <span class="text-[24px] md:text-[32px] font-semibold">2022</span>
+                            <p class="text-[15px] md:text-[16px]">Launch of our state-of-the-art, high-volume
+                                manufacturing at Vadodara
+                                expands our manufacturing footprint.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- img 2021 -->
+                <div class="shrink-0">
+                    <div class="relative text-white">
+                        <img src="img/2024.jpg" alt="" class="w-[290px] h-[422px] pt-5" />
+                        <div class="absolute top-3/5 left-3 p-2">
+                            <span class="text-[24px] md:text-[32px] font-semibold">2021</span>
+                            <p class="text-[15px] md:text-[16px]">We expand our manufacturing footprint with a new unit
+                                in Baddi, Himachal
+                                Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- img 2020 -->
+                <div class="shrink-0">
+                    <div class="relative text-white">
+                        <img src="img/2020.jpg" alt="" class="w-[290px] h-[422px] pt-5" />
+                        <div class="absolute top-3/5 left-3 p-2">
+                            <span class="text-[24px] md:text-[32px] font-semibold">2020</span>
+                            <p class="text-[15px] md:text-[16px]">We acquire an API plant at Ambernath, enhancing our
+                                existing API and
+                                intermediate capacity.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- img 2029 -->
+                <div class="shrink-0">
+                    <div class="relative text-white">
+                        <img src="img/2024.jpg" alt="" class="w-[290px] h-[422px] pt-5" />
+                        <div class="absolute top-3/5 left-3 p-2">
+                            <span class="text-[24px] md:text-[32px] font-semibold">2029</span>
+                            <p class="text-[15px] md:text-[16px]">We expand our manufacturing footprint with a new unit
+                                in Baddi, Himachal
+                                Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="2010" class="tab-content hidden flex gap-3 w-max px-2">
+                <!-- img 2024 -->
+                <div class="shrink-0">
+                    <div class="relative text-white">
+                        <img src="img/2020.jpg" alt="" class="w-[290px] h-[422px] pt-5" />
+                        <div class="absolute top-3/5 left-3 p-2">
+                            <span class="text-[24px] md:text-[32px] font-semibold">2024</span>
+                            <p class="text-[15px] md:text-[16px]">We expand our manufacturing footprint with a new unit
+                                in Baddi, Himachal
+                                Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- img 2023 -->
+                <div class="shrink-0">
+                    <div class="relative text-white">
+                        <img src="img/2022.jpg" alt="" class="w-[290px] h-[422px] pt-5" />
+                        <div class="absolute top-3/5 left-3 p-2">
+                            <span class="text-[24px] md:text-[32px] font-semibold">2023</span>
+                            <p class="text-[15px] md:text-[16px]">We enter the insulin market and become the first
+                                company to launch
+                                Insulin Aspart biosimilars in India.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- img 2022 -->
+                <div class="shrink-0">
+                    <div class="relative text-white">
+                        <img src="img/2023.jpg" alt="" class="w-[290px] h-[422px] pt-5" />
+                        <div class="absolute top-3/5 left-3 p-2">
+                            <span class="text-[24px] md:text-[32px] font-semibold">2022</span>
+                            <p class="text-[15px] md:text-[15px]">Launch of our state-of-the-art, high-volume
+                                manufacturing at Vadodara
+                                expands our manufacturing footprint.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- img 2020 -->
+                <div class="shrink-0">
+                    <div class="relative text-white">
+                        <img src="img/2024.jpg" alt="" class="w-[290px] h-[422px] pt-5" />
+                        <div class="absolute top-3/5 left-3 p-2">
+                            <span class="text-[24px] md:text-[32px] font-semibold">2020</span>
+                            <p class="text-[15px] md:text-[16px]">We acquire an API plant at Ambernath, enhancing our
+                                existing API and
+                                intermediate capacity.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- img 2019 -->
+                <div class="shrink-0">
+                    <div class="relative text-white">
+                        <img src="img/2024.jpg" alt="" class="w-[290px] h-[422px] pt-5" />
+                        <div class="absolute top-3/5 left-3 p-2">
+                            <span class="text-[24px] md:text-[32px] font-semibold">2019</span>
+                            <p class="text-[15px] md:text-[16px]">We expand our manufacturing footprint with a new unit
+                                in Baddi, Himachal
+                                Pradesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="" class="flex items-center gap-2 pt-6 md:hidden">
+            <span class="text-[#009FE2]">OUR HERITAGE</span>
+            <img src="img/icons8-arrow-50-right-blue.png" alt="" class="w-[20px]">
+        </a>
+    </div>
+
+    <hr class="text-[#009FE2]">
+
+    <!-- Driven by people -->
+    <div id="Driven_by_people" class="p-4">
+        <div class="text-[#009FE2] text-[14px] font-semibold mb-4 flex flex-wrap justify-start items-center">
+            <div class="w-4 h-4 bg-[#009FE2] rounded-xs"></div>
+            <span class="ml-2"> DRIVEN BY PEOPLE</span>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-4 ">
+            <!-- Section (Right) -->
+            <div class="w-full md:w-[909px] h-[208px] md:h-[520px]">
+                <!-- Desktop Image -->
+                <img src="img/Image.jpg" alt="Vision and Mission"
+                    class="hidden md:block w-full h-full object-cover rounded-lg shadow-md" />
+
+                <!-- Mobile Image -->
+                <img src="img/mob-Driven by people.jpg" alt="Driven by People"
+                    class="block md:hidden w-full h-full object-cover rounded-lg shadow-md" />
+            </div>
+
+            <!-- Section (Left) -->
+            <div class="w-full md:w-[443px] p-4 md:p-9 bg-[#153965] rounded-lg">
+                <p class="font-Manrope text-[15px] md:text-[18px] font-light text-white ">
+                    We pride ourselves on a culture that’s truly people-driven. Led by our purpose of being ‘Your
+                    Reliable Healthcare Partner’, our teams are committed to build exceptional products and processes
+                    across the value chain.
+                </p>
+                <a href="" class="pt-9 lg:pt-52 xl:pt-65 flex items-center gap-2">
+                    <span class="text-[#009FE2] md:text-[14px] font-Manrope">WORK WITH US </span>
+                    <img src="img/icons8-arrow-50-right-blue.png" alt="" class="w-[20px]">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class=" bg-[#F4FCFF]">
+        <div class="flex flex-wrap justify-between items-center gap-4 lg:p-6 p-5 mt-8 w-full">
+            <!-- Left Section -->
+            <div class="w-full lg:w-[25%]">
+                <img src="img/image 16.png" alt="Logo" class="mb-4">
+                <p class="text-sm text-gray-700">
+                    USV Private Limited Arvind Vithal Gandhi Chowk, BSD Marg, Station Road, Govandi East, Mumbai - 400
+                    088.India.
+                </p>
+                <div class="bg-[#D6F3FF] p-3 mt-5 rounded-xl">
+                    <div class="p-2">
+                        <h5 class="text-gray-500 text-sm">We’re Here to Guide You:</h5>
+                        <span class="text-blue-500 font-semibold text-sm cursor-pointer">Reach us →</span>
+                    </div>
+                    <hr class="md:hidden bg-[#15396533]">
+                    <div class="p-2">
+                        <h5 class="text-gray-500 text-sm">What Sets Us Apart:</h5>
+                        <span class="text-blue-500 font-semibold text-sm cursor-pointer">Highlights →</span>
+                    </div>
+                    <hr class="md:hidden bg-[#15396533]">
+                    <div class="p-2">
+                        <h5 class="text-gray-500 text-sm">Trusted Across Continents:</h5>
+                        <span class="text-blue-500 font-semibold text-sm cursor-pointer">Global →</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="w-full lg:w-[68%] flex flex-wrap gap-4 pt-5">
+
+                <!-- First Row: 3 Columns -->
+                <div class="w-full flex flex-wrap">
+                    <!-- Business -->
+                    <div class="w-1/2 md:w-1/3 lg:w-1/3 mb-4 pb-3">
+                        <h4 class="text-gray-500 font-semibold">BUSINESS</h4>
+                        <ul class="pt-2 text-[14px] text-gray-700 space-y-2">
+                            <li>India Business</li>
+                            <li>International Business</li>
+                            <li>Consumer Business</li>
+                            <li>Our Presence</li>
+                            <li>Partnering</li>
+                        </ul>
+                    </div>
+
+                    <!-- Who We Are -->
+                    <div class="w-1/2 md:w-1/3 lg:w-1/3 mb-4 pb-3">
+                        <h4 class="text-gray-500 font-semibold">WHO WE ARE</h4>
+                        <ul class="pt-2 text-sm text-gray-700 space-y-2">
+                            <li>Our Story</li>
+                            <li>Heritage</li>
+                            <li>Leadership</li>
+                        </ul>
+                    </div>
+
+                    <!-- Our Expertise -->
+                    <div class="w-1/2 md:w-1/3 lg:w-1/3 mb-4">
+                        <h4 class="text-gray-500 font-semibold">OUR EXPERTISE</h4>
+                        <ul class="pt-2 text-sm text-gray-700 space-y-2">
+                            <li>Value Chain Capabilities</li>
+                            <li>Market Leadership</li>
+                        </ul>
+                    </div>
+
+                    <!-- Capabilities -->
+                    <div class="w-1/2 md:w-1/3 lg:w-1/3 mb-4 pb-3">
+                        <h4 class="text-gray-500 font-semibold">CAPABILITIES</h4>
+                        <ul class="pt-2 text-sm text-gray-700 space-y-2">
+                            <li>India Business</li>
+                            <li>Generics</li>
+                            <li>Biosimilars</li>
+                            <li>Custom Peptides</li>
+                            <li>Nutraceuticals</li>
+                        </ul>
+                    </div>
+
+                    <!-- Life at USV -->
+                    <div class="w-1/2 md:w-1/3 lg:w-1/3 mb-4">
+                        <h4 class="text-gray-500 font-semibold">LIFE AT USV</h4>
+                        <ul class="pt-2 text-sm text-gray-700 space-y-2">
+                            <li>Credo</li>
+                            <li>People</li>
+                            <li>Work With Us</li>
+                        </ul>
+                    </div>
+
+                    <!-- Our Responsibility -->
+                    <div class="w-1/2 md:w-1/3 lg:w-1/3 mb-4">
+                        <h4 class="text-gray-500 font-semibold">OUR RESPONSIBILITY</h4>
+                        <ul class="pt-2 text-sm text-gray-700 space-y-2">
+                            <li>Environment</li>
+                            <li>Education</li>
+                            <li>Health</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="md:block hidden">
+        <!-- lower footer -->
+        <div class="flex flex-wrap justify-between items-center p-5 text-[14px] gap-5">
+            <!-- <div class="lg:hidden:border-b border-b lg:hidden:border-t border-t lg:hidden:w-full w-full lg:hidden:p-5 p-5"> -->
+            <div class=" border-b border-t p-5 lg:p-2 w-full md:w-auto md:border-none">
+                <ul class="flex flex-wrap justify-between items-center gap-8">
+                    <a href="#"><img src="img/icons8-fb-24.png" alt="" class="w-5"></a>
+                    <a href=""><img src="img/icons8-linkedin-50.png" alt="" class="w-5"></a>
+                    <a href=""><img src="img/icons8-x-32.png" alt="" class="w-5"></a>
+                    <a href=""><img src="img/icons8-insta-26.png" alt="" class="w-4"></a>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex flex-wrap justify-between items-center gap-8">
+                    <a href="">Terms and conditions</a>
+                    <a href="">© 2024 USV All rights reserved</a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
